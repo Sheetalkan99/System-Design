@@ -1,0 +1,65 @@
+Question: Design an Online Food Ordering System
+
+You need to design a Food Ordering System like DoorDash or UberEats with the following features:
+
+Requirements:
+
+Restaurant Management
+
+Add a restaurant.
+
+Each restaurant can have multiple food items (menu).
+
+User Management
+
+Users can register and browse restaurants.
+
+Order Placement
+
+A user can place an order with one restaurant at a time.
+
+Each order should include multiple food items with quantities.
+
+Order Tracking
+
+The order should have statuses:
+
+PLACED
+
+PREPARING
+
+OUT_FOR_DELIVERY
+
+DELIVERED
+
+Singleton Database
+
+Use a singleton FoodDB to store restaurants, users, and orders.
+
+Methods to Implement
+
+add_restaurant(name)
+
+add_food_item(restaurant_id, item_name, price)
+
+register_user(name, email)
+
+place_order(user_id, restaurant_id, food_items)
+
+food_items is a dict: {"Burger": 2, "Pizza": 1}
+
+update_order_status(order_id, new_status)
+
+get_user_orders(user_id)
+
+Goal
+
+Build this step-by-step, starting with:
+
+Adding restaurants and menus.
+
+Adding users.
+
+Placing an order.
+
+Updating and tracking order status.
